@@ -1,0 +1,133 @@
+#shapka {
+	font-size: 45px;
+	text-align: center;
+	width: 1000px; /* Ширина блока и общая ширина*/
+	background: #80ffff; /* Цвет фона */
+	height: 100px; /* Высота блока */
+	margin-right: auto; /* Авто-отступ справа */
+	margin-left: auto; /* Авто-отступ слева */
+	padding: 10px; /* Внутренние поля вокруг содержимого */
+}
+
+#container {
+	font-size: 20px;
+	width: 1020px; /* Ширина слоя или (ширина макета+20) */
+	margin-right: auto; /* Авто-отступ справа */
+	margin-left: auto; /* Авто-отступ слева */
+}
+
+#menu {
+	width: 200px; /* Ширина слоя */
+	float: left; /* Обтекание с соседним слоем */
+	color: white; /* Цвет текста */
+	background: #008080; /* Цвет фона */
+	padding: 10px;
+	float: left; /* Внутренние поля вокруг содержимого */
+	height: 177vh;
+}
+
+#content { /* Правая колонка*/
+	width: 780px; /* Ширина слоя */
+	float: left; /* Обтекание с соседним слоем */
+	padding: 10px; /* Внутренние поля вокруг содержимого */
+	background: #e0e0e0;
+	width: 780px; /* Цвет заднего фона */
+}
+
+#bottom {
+	font-size: 15px;
+	width: 1000px; /* Ширина слоя */
+	clear: left; /* возвращаем блочность и располагаем слой слева */
+	padding: 10px; /* Внутренние поля вокруг содержимого */
+	background: #444; /* фон */
+	color: #fff; /* цвет текста */
+	margin-right: auto; /* Авто-отступ справа */
+	margin-left: auto; /* Авто-отступ слева */
+}
+
+.rounded {
+	counter-reset: li;
+	list-style: none;
+	font: 18px "Trebuchet MS", "Lucida Sans";
+	padding: 0;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+}
+
+.rounded a {
+	position: relative;
+	display: block;
+	padding: .4em .4em .4em 2em;
+	margin: .5em 0;
+	background: #DAD2CA;
+	color: #444;
+	text-decoration: none;
+	border-radius: .3em;
+	transition: .3s ease-out;
+}
+
+.rounded a:hover {
+	background: #E9E4E0;
+}
+
+.rounded a:hover:before {
+	transform: rotate(360deg);
+}
+
+.rounded a:before {
+	content: counter(li);
+	counter-increment: li;
+	position: absolute;
+	left: -1.3em;
+	top: 50%;
+	margin-top: -1.3em;
+	background: #8FD4C1;
+	height: 2em;
+	width: 2em;
+	line-height: 2em;
+	border: .3em solid white;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 2em;
+	transition: all .3s ease-out;
+}
+
+.category-list * {
+	transition: .4s linear;
+}
+
+.category-list {
+	background: white;
+	list-style-type: circle;
+	list-style-position: inside;
+	padding: 0 10px;
+	margin: 0;
+}
+
+.category-list li {
+	font-family: "Trebuchet MS", "Lucida Sans";
+	border-bottom: 1px solid #efefef;
+	padding: 10px 0;
+}
+
+.category-list a {
+	text-decoration: none;
+	color: #555;
+}
+
+.category-list li span {
+	float: right;
+	display: inline-block;
+	border: 1px solid #efefef;
+	padding: 0 5px;
+	font-size: 13px;
+	color: #999;
+}
+
+.category-list li:hover a {
+	color: #c93961;
+}
+
+.category-list li:hover span {
+	color: #c93961;
+	border: 1px solid #c93961;
+}
